@@ -104,9 +104,9 @@ predictions, probabilities = pipeline.predict_new_data(new_patient_data)
 
 Le pipeline soutient les professionnels de santé dans :
 - Détection précoce et dépistage d'Alzheimer
-- Évaluation des risques utilisant batteries cognitives
+- Évaluation des risques
 - Systèmes d'aide à la décision clinique
-- Suivi longitudinal des patients
+
 
 ## Caractéristiques du Dataset
 
