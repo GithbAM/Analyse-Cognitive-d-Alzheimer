@@ -372,7 +372,7 @@ def evaluate_model(model, X_train, y_train, X_test, y_test, model_name="Modèle"
     
     # Afficher les résultats
     print(f"\nRésultats pour {model_name} :")
-    print(f"Précision : {results['accuracy']:.4f}")
+    print(f"Accuracy : {results['accuracy']:.4f}")
     print(f"Précision : {results['precision']:.4f}")
     print(f"Rappel : {results['recall']:.4f}")
     print(f"Score F1 : {results['f1']:.4f}")
@@ -504,7 +504,7 @@ def create_comparison_dataframe(results_dict):
     for model_name, results in results_dict.items():
         comparison_data.append({
             'Modèle': model_name,
-            'Précision': results['accuracy'],
+            'Accuracy': results['accuracy'],
             'Précision': results['precision'],
             'Rappel': results['recall'],
             'Score F1': results['f1']
@@ -533,7 +533,7 @@ def plot_model_comparison(comparison_df, figsize=(12, 8)):
     # Transformer le dataframe pour le graphique
     metrics_df = comparison_df.melt(
         id_vars='Modèle', 
-        value_vars=['Précision', 'Précision', 'Rappel', 'Score F1'],
+        value_vars=['Accuracy', 'Précision', 'Rappel', 'Score F1'],
         var_name='Métrique', 
         value_name='Score'
     )
