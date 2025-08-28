@@ -16,9 +16,20 @@ Un pipeline complet de machine learning pour la prédiction de la maladie d'Alzh
 
 ```
 detection-alzheimer/
-├── 03_Alzheimer_Cognitive_pipeline.pdf          # Pipeline ML Complet
-├── Alzheimer_Cognitive_fonctions.py             # Module de Fonctions Principales
-└── alzheimers_disease_data.csv                  # Dataset Clinique
+├── data/
+│   └── alzheimers_disease_data.csv  # Dataset Clinique
+├── notebooks/
+│   ├── 01_Alzheimer_cognitive_cell.ipynb  # Analyse détaillée
+│   ├── 02_Alzheimer_Cognitive_fonctions.ipynb  # Module de Fonctions Principales
+│   └── 03_Alzheimer_Cognitive_pipeline.ipynb  # Pipeline ML Complet
+├── reports/
+│   ├── 01_Alzheimer_cognitive_cell.pdf  # Rapport détaillé
+│   ├── 02_Alzheimer_Cognitive_fonctions.pdf  # Documentation des fonctions
+│   └── 03_Alzheimer_Cognitive_pipeline.pdf  # Rapport du pipeline
+├── src/
+│   └── Alzheimer_Cognitive_fonctions.py  # Module de Fonctions Principales
+├── .gitignore
+└── README.md
 ```
 
 ## Implémentation Technique
