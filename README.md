@@ -2,7 +2,7 @@
 
 ## Aperçu
 
-Un pipeline complet de machine learning pour la prédiction de la maladie d'Alzheimer utilisant des données d'évaluation cognitive et clinique. Ce projet démontre des méthodologies avancées de data science pour les applications de santé, atteignant 94,4% de précision avec optimisation Random Forest.
+Un pipeline complet de machine learning pour la prédiction de la maladie d'Alzheimer utilisant des données d'évaluation cognitive et clinique. Ce projet démontre des méthodologies avancées de data science pour les applications de santé, atteignant 91,03% de F1-Score avec optimisation Random Forest.
 
 ## Fonctionnalités Clés
 
@@ -54,16 +54,23 @@ detection-alzheimer/
 
 ## Résultats
 
-| Modèle | Précision | Precision | Rappel | F1-Score |
-|--------|-----------|-----------|--------|----------|
-| **Random Forest (Optimisé)** | **94,4%** | **92,6%** | **90,1%** | **91,3%** |
-| SVM (Optimisé) | 84,7% | 80,3% | 75,0% | 77,6% |
-| Régression Logistique | 82,1% | 77,4% | 69,7% | 73,4% |
+| Modèle | Accuracy | Précision | Rappel | **F1-Score** |
+|--------|----------|-----------|--------|--------------|
+| **Random Forest (Optimisé)** | **93,72%** | **91,95%** | **90,13%** | **🎯 91,03%** |
+| SVM (Optimisé) | 84,65% | 80,28% | 75,00% | 77,55% |
+| Régression Logistique (Optimisé) | 82,09% | 77,37% | 69,74% | 73,36% |
+
+### Pourquoi le F1-Score est la métrique clé ?
+
+En diagnostic médical, le **F1-Score** est essentiel car :
+- ⚖️ **Équilibre critique** : Combine précision et rappel pour éviter les biais
+- 🚨 **Coût des erreurs** : Faux négatifs (manquer Alzheimer) et faux positifs (sur-diagnostic) sont tous deux critiques
+- 📊 **Dataset déséquilibré** : Gère mieux le ratio 64,6% sains / 35,4% Alzheimer que l'accuracy seule
 
 **Signification Clinique :**
-- Sensibilité élevée (90,1%) pour la détection précoce
-- Excellente spécificité (95,0%) minimisant les faux positifs
-- Performance équilibrée à travers les classes diagnostiques
+- **Sensibilité élevée (90,13%)** : Excellente détection des cas positifs
+- **Précision élevée (91,95%)** : Minimise les faux positifs 
+- **Performance équilibrée** : F1-Score de 91,03% indique un modèle fiable pour l'aide au diagnostic
 
 ## Features Clés Identifiées
 
