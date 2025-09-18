@@ -4,7 +4,7 @@
 
 ## Démo Live
 
-**Dashboard :** [https://analyse-cognitive-d-alzheimer.streamlit.app/](https://share.streamlit.io)
+**Dashboard :** [Clinical Decision Support]([https://share.streamlit.io](https://analyse-cognitive-d-alzheimer.streamlit.app/))
 
 ## Résultats
 
