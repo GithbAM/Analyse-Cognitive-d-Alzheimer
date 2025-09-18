@@ -9,6 +9,7 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import joblib
+from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
@@ -20,7 +21,9 @@ warnings.filterwarnings('ignore')
 
 @st.cache_resource
 def load_pipeline():
-    return joblib.load("alzheimer_pipeline_trained.pkl")
+    src_dir = Path(__file__).resolve().parent
+    model_path = src_dir.parent / "models" / "alzheimer_pipeline_trained.pkl"
+    return joblib.load(model_path)
 
 pipeline = load_pipeline()
 
