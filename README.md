@@ -4,7 +4,7 @@
 
 ## Démo Live
 
-**Dashboard :** [alzheimer-predictor.streamlit.app](https://share.streamlit.io)
+**Dashboard :** [https://analyse-cognitive-d-alzheimer.streamlit.app/](https://share.streamlit.io)
 
 ## Résultats
 
