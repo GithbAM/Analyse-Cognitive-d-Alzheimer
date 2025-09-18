@@ -9,13 +9,14 @@ import pandas as pd
 import numpy as np
 import plotly.express as px
 import joblib
-from pathlib import Path
 import warnings
 warnings.filterwarnings('ignore')
 
 
 # In[9]:
 
+
+# Chargement du modèle
 
 # Chargement du modèle
 
@@ -256,14 +257,14 @@ else:
     with col1:
         st.markdown("## 🏥 Interface Complète - 32 Variables")
         st.markdown(f"""
-        Cette version utilise **TOUTES les variables** de votre dataset pour 
+        Cette version utilise **TOUTES les variables** du dataset pour 
         une évaluation exhaustive du risque Alzheimer.
         
         **🎯 Architecture Complète:**
-        - 📝 **32 variables éditables** (toutes celles de votre dataset)
-        - 🔧 **Scaler sur 32 features** (comme votre entraînement)
-        - 🎯 **Prédiction sur 17 features** (sélection optimale)
-        - 🚀 **Votre modèle réel** (91.03% F1-Score)
+        - 📝 **32 variables éditables**
+        - 🔧 **Scaler sur 32 features**
+        - 🎯 **Prédiction sur 17 features**
+        - 🚀 **Le modèle réel**
         
         **📊 Variables par catégorie:**
         - 🧠 **Cognitives**: MMSE, FunctionalAssessment, ADL, symptômes
@@ -273,9 +274,9 @@ else:
         - 🩺 **Antécédents**: Familiaux, Cardio, Diabète, etc.
         
         **Impact clinique avec modèle complet:**
-        - ✅ **91.03% précision réelle** (votre F1-Score)
-        - 🎯 **Évaluation exhaustive** (aucune variable manquante)
-        - ⚡ **Pipeline production** (directement votre code)
+        - ✅ **91.03% précision réelle**
+        - 🎯 **Évaluation exhaustive**
+        - ⚡ **Pipeline production**
         - 🏥 **Interface médicale complète**
         """)
         
@@ -302,7 +303,7 @@ else:
         
         st.success(f"""
         **🎯 Fonctionnement Exact**  
-        Votre pipeline fait exactement ceci:
+        La pipeline fait exactement ceci:
         1. **Scaler**: 32 features → standardisation
         2. **Sélection**: 17 features optimales  
         3. **Random Forest**: Prédiction finale
@@ -310,7 +311,7 @@ else:
         """)
 
 st.markdown("---")
-st.markdown("**Clinical Decision Support System v3.0 – Full Features** | 17/17 éditables")
+st.markdown("**Clinical Decision Support System")
 
 
 # In[ ]:
