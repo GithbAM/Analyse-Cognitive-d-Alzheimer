@@ -10,13 +10,12 @@ import numpy as np
 import plotly.express as px
 import joblib
 import warnings
+from pathlib import Path
 warnings.filterwarnings('ignore')
 
 
 # In[9]:
 
-
-# Chargement du modèle
 
 # Chargement du modèle
 
