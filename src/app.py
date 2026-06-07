@@ -259,13 +259,13 @@ else:
         Cette version utilise **TOUTES les variables** du dataset pour 
         une évaluation exhaustive du risque Alzheimer.
         
-        ** Architecture Complète:**
+        **Architecture Complète:**
         - **32 variables éditables**
         - **Scaler sur 32 features**
         - **Prédiction sur 17 features**
         - **Le modèle réel**
         
-        ** Variables par catégorie:**
+        **Variables par catégorie:**
         - **Cognitives**: MMSE, FunctionalAssessment, ADL, symptômes
         - **Démographiques**: Âge, Genre, Éducation, Origine
         - **Physiologiques**: BMI, TA, Cholestérol complet
@@ -280,28 +280,28 @@ else:
         """)
         
     with col2:
-        st.markdown("## 🔬 Détails Techniques")
+        st.markdown("## Détails Techniques")
         st.markdown(f"""
         ### Variables Implémentées
         **Toutes les 32 features du dataset original:**
         
-        ** Cognitives (7)**: MMSE, FunctionalAssessment, ADL, 
+        **Cognitives (7)**: MMSE, FunctionalAssessment, ADL, 
         MemoryComplaints, BehavioralProblems, Confusion, etc.
         
-        ** Physiologiques (8)**: Age, BMI, SystolicBP, 
+        **Physiologiques (8)**: Age, BMI, SystolicBP, 
         DiastolicBP, Cholestérol complet
         
-        ** Mode de vie (5)**: DietQuality, PhysicalActivity, 
+        **Mode de vie (5)**: DietQuality, PhysicalActivity, 
         AlcoholConsumption, SleepQuality, Smoking
         
-        ** Antécédents (7)**: FamilyHistory, CardiovascularDisease, 
+        **Antécédents (7)**: FamilyHistory, CardiovascularDisease, 
         Diabetes, Depression, HeadInjury, etc.
         
-        ** Démographiques (3)**: Gender, Ethnicity, EducationLevel
+        **Démographiques (3)**: Gender, Ethnicity, EducationLevel
         """)
         
         st.success(f"""
-        ** Fonctionnement Exact**  
+        **Fonctionnement Exact**  
         La pipeline fait exactement ceci:
         1. **Scaler**: 32 features → standardisation
         2. **Sélection**: 17 features optimales  
