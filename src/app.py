@@ -206,10 +206,10 @@ if analyze_button:
         st.plotly_chart(fig, use_container_width=True)
 
     with col2:
-            st.markdown("## 📋 Analyse des Features")
+            st.markdown("## Analyse des Features")
             
             # Features principales utilisées (les 17 sélectionnées)
-            st.markdown("### 🎯 Features Actives (17 sélectionnées)")
+            st.markdown("### Features Actives (17 sélectionnées)")
             key_features = [
                 ("FunctionalAssessment", functional_assessment, "8-10", "Impact maximum"),
                 ("MMSE", mmse, "24-30", "Cognition"),
@@ -231,7 +231,7 @@ if analyze_button:
                     st.markdown(f"🟢 **{feature}**: {value} - {description}")
             
             # Facteurs de risque supplémentaires saisis
-            st.markdown("### 🏥 Facteurs Contextuels Saisis")
+            st.markdown("### Facteurs Contextuels Saisis")
             risk_factors = []
             if family_history_alzheimers:
                 risk_factors.append("Antécédents familiaux")
@@ -254,54 +254,54 @@ if analyze_button:
 else:
     # Écran d'accueil
     with col1:
-        st.markdown("## 🏥 Interface Complète - 32 Variables")
+        st.markdown("## Interface Complète - 32 Variables")
         st.markdown(f"""
         Cette version utilise **TOUTES les variables** du dataset pour 
         une évaluation exhaustive du risque Alzheimer.
         
-        **🎯 Architecture Complète:**
-        - 📝 **32 variables éditables**
-        - 🔧 **Scaler sur 32 features**
-        - 🎯 **Prédiction sur 17 features**
-        - 🚀 **Le modèle réel**
+        ** Architecture Complète:**
+        - **32 variables éditables**
+        - **Scaler sur 32 features**
+        - **Prédiction sur 17 features**
+        - **Le modèle réel**
         
-        **📊 Variables par catégorie:**
-        - 🧠 **Cognitives**: MMSE, FunctionalAssessment, ADL, symptômes
-        - 👤 **Démographiques**: Âge, Genre, Éducation, Origine
-        - 🏥 **Physiologiques**: BMI, TA, Cholestérol complet
-        - 🏃‍♂️ **Mode de vie**: Alimentation, Sport, Sommeil, Tabac
-        - 🩺 **Antécédents**: Familiaux, Cardio, Diabète, etc.
+        ** Variables par catégorie:**
+        - **Cognitives**: MMSE, FunctionalAssessment, ADL, symptômes
+        - **Démographiques**: Âge, Genre, Éducation, Origine
+        - **Physiologiques**: BMI, TA, Cholestérol complet
+        - **Mode de vie**: Alimentation, Sport, Sommeil, Tabac
+        - **Antécédents**: Familiaux, Cardio, Diabète, etc.
         
         **Impact clinique avec modèle complet:**
-        - ✅ **91.03% précision réelle**
-        - 🎯 **Évaluation exhaustive**
-        - ⚡ **Pipeline production**
-        - 🏥 **Interface médicale complète**
+        - **91.03% précision réelle**
+        - **Évaluation exhaustive**
+        - **Pipeline production**
+        - **Interface médicale complète**
         """)
         
     with col2:
         st.markdown("## 🔬 Détails Techniques")
         st.markdown(f"""
-        ### ✅ Variables Implémentées
+        ### Variables Implémentées
         **Toutes les 32 features du dataset original:**
         
-        **🧠 Cognitives (7)**: MMSE, FunctionalAssessment, ADL, 
+        ** Cognitives (7)**: MMSE, FunctionalAssessment, ADL, 
         MemoryComplaints, BehavioralProblems, Confusion, etc.
         
-        **🏥 Physiologiques (8)**: Age, BMI, SystolicBP, 
+        ** Physiologiques (8)**: Age, BMI, SystolicBP, 
         DiastolicBP, Cholestérol complet
         
-        **🏃‍♂️ Mode de vie (5)**: DietQuality, PhysicalActivity, 
+        ** Mode de vie (5)**: DietQuality, PhysicalActivity, 
         AlcoholConsumption, SleepQuality, Smoking
         
-        **🩺 Antécédents (7)**: FamilyHistory, CardiovascularDisease, 
+        ** Antécédents (7)**: FamilyHistory, CardiovascularDisease, 
         Diabetes, Depression, HeadInjury, etc.
         
-        **👤 Démographiques (3)**: Gender, Ethnicity, EducationLevel
+        ** Démographiques (3)**: Gender, Ethnicity, EducationLevel
         """)
         
         st.success(f"""
-        **🎯 Fonctionnement Exact**  
+        ** Fonctionnement Exact**  
         La pipeline fait exactement ceci:
         1. **Scaler**: 32 features → standardisation
         2. **Sélection**: 17 features optimales  
